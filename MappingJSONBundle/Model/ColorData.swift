@@ -29,6 +29,7 @@ struct ColorData :Codable, Identifiable{
 //Mark: - MOCK DATA
 extension ColorData{
     static func loadColorData() -> [ColorData]{
+        //fungsinya untuk parsing bundle json
         guard let url = Bundle.main.url(forResource: "Colors", withExtension: "json"), let data = try? Data(contentsOf: url)
         else{fatalError("Failed to load JSON data from bundle")}
         do {
