@@ -32,6 +32,6 @@ func colorFromHexString(_ hex:String) -> Color{
     //1. konversi hex ke integer untuk validasi kembali, radix basis sistem bilangan matematika, a-z menjadi integer
     guard let r = UInt64(redColor, radix: 16),let g = UInt64(greenColor, radix: 16),let b = UInt64(blueColor, radix: 16)
     else {return Color(red: 0, green: 0, blue: 0)}
-    let results = Color(red: Double(r), green: Double(g), blue: Double(b) / 255.0)
+    let results = Color(red: Double(r)/255.0, green: Double(g)/255.0, blue: Double(b) / 255.0)
     return results
 }
