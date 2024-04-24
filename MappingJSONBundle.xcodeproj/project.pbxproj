@@ -12,6 +12,8 @@
 		524B7A5A2BD89BD2008BF116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524B7A592BD89BD2008BF116 /* Assets.xcassets */; };
 		524B7A5D2BD89BD2008BF116 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524B7A5C2BD89BD2008BF116 /* Preview Assets.xcassets */; };
 		524B7A682BD89CA9008BF116 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 524B7A672BD89CA9008BF116 /* Colors.json */; };
+		524B7A6B2BD89D36008BF116 /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B7A6A2BD89D36008BF116 /* ColorData.swift */; };
+		524B7A6D2BD8A100008BF116 /* ColorFromHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B7A6C2BD8A100008BF116 /* ColorFromHex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		524B7A592BD89BD2008BF116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524B7A5C2BD89BD2008BF116 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		524B7A672BD89CA9008BF116 /* Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
+		524B7A6A2BD89D36008BF116 /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
+		524B7A6C2BD8A100008BF116 /* ColorFromHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromHex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		524B7A542BD89BD1008BF116 /* MappingJSONBundle */ = {
 			isa = PBXGroup;
 			children = (
+				524B7A692BD89D25008BF116 /* Model */,
 				524B7A632BD89BF6008BF116 /* App */,
 				524B7A642BD89BFC008BF116 /* View */,
 				524B7A652BD89C0A008BF116 /* Resources */,
@@ -100,6 +105,15 @@
 				524B7A672BD89CA9008BF116 /* Colors.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		524B7A692BD89D25008BF116 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				524B7A6A2BD89D36008BF116 /* ColorData.swift */,
+				524B7A6C2BD8A100008BF116 /* ColorFromHex.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				524B7A582BD89BD1008BF116 /* ContentView.swift in Sources */,
+				524B7A6D2BD8A100008BF116 /* ColorFromHex.swift in Sources */,
 				524B7A562BD89BD1008BF116 /* MappingJSONBundleApp.swift in Sources */,
+				524B7A6B2BD89D36008BF116 /* ColorData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
